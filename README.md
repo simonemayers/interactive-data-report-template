@@ -1,58 +1,46 @@
-# Interactive Data Report Template
+# **Loan Repayment Analysis Project**
 
-This repository contains the Quarto Markdown file for an **Interactive Data Report Template**. This template is designed for creating structured and interactive data reports, with features such as embedded R code chunks, mathematical rendering, and a navigable table of contents.
+## **Project Overview**
+This project explores a loan repayment dataset to identify key factors that influence whether borrowers default on their loans or successfully repay them. The analysis uses R for data manipulation, visualization, and identifying patterns that can help improve loan approval processes.
 
-## Features
+---
 
-- **Interactive Reports**: Combine text, visuals, and code for a dynamic reporting experience.
-- **Table of Contents**: Automatically generated for easy navigation.
-- **Mathematical Rendering**: Supports KaTeX for equations and mathematical notations.
-- **Embedded R Code**: Ideal for data analysis, visualization, and reproducible research.
-- **Customizable Configuration**: Modify YAML frontmatter to suit your project needs.
+## **Dataset Description**
+The dataset includes the following key variables:
 
-## Prerequisites
+- **ID**: Unique identifier for each borrower  
+- **Occupation**: Industrial or professional sector  
+- **Age**: Borrower's age  
+- **Loan_Salary_Ratio**: Ratio of loan amount to salary  
+- **Outcome**: Loan status (repaid or defaulted)  
 
-- **Quarto**: Ensure Quarto is installed on your system. [Install Quarto](https://quarto.org/docs/get-started/)
-- **R**: Install R and RStudio for executing embedded R code chunks.
-- **Required R Packages**: The document uses the `knitr` package. Install it via:
-  ```R
-  install.packages("knitr")
-  ```
+A larger dataset is loaded using the `readr` package for more comprehensive analysis.
 
-## How to Use
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/interactive-data-report-template.git
-   cd interactive-data-report-template
-   ```
+## **Tools & Libraries Used**
+- R  
+- `readr` for reading TSV files  
+- DataFrame manipulation functions  
 
-2. Render the document:
-   ```bash
-   quarto render 02-asn.qmd
-   ```
+---
 
-3. View the output:
-   - By default, the rendered file will be in the `html` format and can be viewed in any browser.
+## **Project Goals**
+- Identify patterns in borrower profiles related to default risks  
+- Use insights to improve loan approval criteria  
+- Develop predictive models for loan repayment behavior  
 
-## Customization
+---
 
-- **Bibliography**: Uncomment the `bibliography` and `csl` lines in the YAML frontmatter to include references.
-- **Algorithm Styling**: Add LaTeX packages for algorithms by uncommenting the `header-includes` section.
+## **How to Run the Code**
+1. Clone this repository.  
+2. Ensure R and necessary packages (`readr`) are installed.  
+3. Run the R script to load and analyze the dataset.
 
-## File Structure
+---
 
-- `02-asn.qmd`: Main Quarto Markdown file for the interactive data report template.
-- Other files: Add any additional files like datasets, images, or bibliographies.
-
-## Contributing
-
-If you'd like to contribute:
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature-name`.
-3. Commit changes: `git commit -m "Add feature"`.
-4. Push to the branch: `git push origin feature-name`.
-5. Open a pull request.
-
-
+## **Next Steps**
+- Expand the dataset with more variables (e.g., credit history).  
+- Build predictive models using machine learning techniques.  
+- Refine the analysis for better insights.  
 
