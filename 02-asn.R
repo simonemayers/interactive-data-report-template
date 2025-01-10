@@ -7,9 +7,6 @@ df <- data.frame(ID, Occupation, Age, Loan_Salary_Ratio, Outcome)
 print(df)
 
 
-knitr::kable(df, caption = 'A machine learning application dataset.', col.names = gsub("[_]", " ", names(df)), align = "rlccl")
-
-
 # load readr
 library(readr)
 df <- readr::read_tsv("./data.tsv", col_names = FALSE)
